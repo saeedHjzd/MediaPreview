@@ -12,6 +12,7 @@
 		3041553C2AF5DF13003646A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3041553B2AF5DF13003646A2 /* Assets.xcassets */; };
 		3041553F2AF5DF13003646A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3041553E2AF5DF13003646A2 /* Preview Assets.xcassets */; };
 		304155462AF5E1E1003646A2 /* MediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304155452AF5E1E1003646A2 /* MediaModel.swift */; };
+		304155482AF5E405003646A2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304155472AF5E405003646A2 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		3041553B2AF5DF13003646A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3041553E2AF5DF13003646A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		304155452AF5E1E1003646A2 /* MediaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaModel.swift; sourceTree = "<group>"; };
+		304155472AF5E405003646A2 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				304155372AF5DF11003646A2 /* MediaPreviewApp.swift */,
 				304155392AF5DF11003646A2 /* ContentView.swift */,
 				304155452AF5E1E1003646A2 /* MediaModel.swift */,
+				304155472AF5E405003646A2 /* NetworkService.swift */,
 				3041553B2AF5DF13003646A2 /* Assets.xcassets */,
 				3041553D2AF5DF13003646A2 /* Preview Content */,
 			);
@@ -142,6 +145,7 @@
 			files = (
 				3041553A2AF5DF11003646A2 /* ContentView.swift in Sources */,
 				304155382AF5DF11003646A2 /* MediaPreviewApp.swift in Sources */,
+				304155482AF5E405003646A2 /* NetworkService.swift in Sources */,
 				304155462AF5E1E1003646A2 /* MediaModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
