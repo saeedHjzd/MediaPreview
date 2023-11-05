@@ -12,7 +12,6 @@ struct MediaListView: View {
     @ObservedObject var viewModel: MediaListViewModel
     
     var body: some View {
-        //TODO: - Add Tests
         
         NavigationView{
             List {
