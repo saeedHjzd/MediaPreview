@@ -18,7 +18,7 @@ struct MediaListView: View {
             List {
                 ForEach(viewModel.mediaList, id: \.self) { media in
                     ZStack {
-                        NavigationLink(destination: EmptyView()) {
+                        NavigationLink(destination: DetailView(media: media)) {
                             EmptyView()
                         }.opacity(0)
                         MediaRowView(media: media, viewModel: viewModel)

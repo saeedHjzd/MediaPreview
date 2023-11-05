@@ -14,6 +14,7 @@
 		304155462AF5E1E1003646A2 /* MediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304155452AF5E1E1003646A2 /* MediaModel.swift */; };
 		304155482AF5E405003646A2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304155472AF5E405003646A2 /* NetworkService.swift */; };
 		3041554A2AF5E90A003646A2 /* ImageListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304155492AF5E90A003646A2 /* ImageListVM.swift */; };
+		3041554C2AF77462003646A2 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3041554B2AF77462003646A2 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		304155452AF5E1E1003646A2 /* MediaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaModel.swift; sourceTree = "<group>"; };
 		304155472AF5E405003646A2 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		304155492AF5E90A003646A2 /* ImageListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListVM.swift; sourceTree = "<group>"; };
+		3041554B2AF77462003646A2 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			children = (
 				304155372AF5DF11003646A2 /* MediaPreviewApp.swift */,
 				304155392AF5DF11003646A2 /* MediaListView.swift */,
+				3041554B2AF77462003646A2 /* DetailView.swift */,
 				304155452AF5E1E1003646A2 /* MediaModel.swift */,
 				304155472AF5E405003646A2 /* NetworkService.swift */,
 				304155492AF5E90A003646A2 /* ImageListVM.swift */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3041554A2AF5E90A003646A2 /* ImageListVM.swift in Sources */,
+				3041554C2AF77462003646A2 /* DetailView.swift in Sources */,
 				3041553A2AF5DF11003646A2 /* MediaListView.swift in Sources */,
 				304155382AF5DF11003646A2 /* MediaPreviewApp.swift in Sources */,
 				304155482AF5E405003646A2 /* NetworkService.swift in Sources */,

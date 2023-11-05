@@ -13,4 +13,12 @@ struct Media: Identifiable, Decodable, Hashable {
     let previewLink: String
     let mediaLink: String
     let type: String
+    var mediaType: MediaType {
+            return MediaType(rawValue: type) ?? .image
+    }
+}
+
+enum MediaType: String {
+    case image = "image"
+    case video = "video"
 }
