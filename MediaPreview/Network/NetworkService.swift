@@ -12,7 +12,7 @@ import SwiftUI
 class NetworkService {
     
     func fetchMediaList() -> AnyPublisher<[Media], Error> {
-        guard let url = URL(string: "https://c62881db-c803-4c5e-907e-3b1d843fa7fd.mock.pstmn.io/medialist") else {
+        guard let url = URL(string: Constants.mediaListURL) else {
             return Fail(error: NSError(domain: "Invalid URL", code: 0, userInfo: nil))
                 .eraseToAnyPublisher()
         }

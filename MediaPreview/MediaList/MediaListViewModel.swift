@@ -9,7 +9,7 @@ import Foundation
 import Combine
 import SwiftUI
 
-class ImageListViewModel: ObservableObject {
+class MediaListViewModel: ObservableObject {
     
     @Published var images: [String: UIImage] = [:]
     @Published var mediaList: [Media] = []

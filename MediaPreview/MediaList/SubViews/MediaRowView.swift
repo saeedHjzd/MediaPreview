@@ -1,46 +1,16 @@
 //
-//  ContentView.swift
+//  MediaRowView.swift
 //  MediaPreview
 //
-//  Created by Saeed on 8/13/1402 AP.
+//  Created by Saeed on 8/14/1402 AP.
 //
 
 import SwiftUI
 
-struct MediaListView: View {
-    
-    @ObservedObject var viewModel: ImageListViewModel
-    
-    var body: some View {
-        //TODO: - Add Tests
-        
-        NavigationView{
-            List {
-                ForEach(viewModel.mediaList, id: \.self) { media in
-                    ZStack {
-                        NavigationLink(destination: DetailView(media: media)) {
-                            EmptyView()
-                        }.opacity(0)
-                        MediaRowView(media: media, viewModel: viewModel)
-                    }
-                }
-                .listRowSeparator(.hidden)
-            }
-            .scrollContentBackground(.hidden)
-            
-        }
-    }
-}
-
-
-#Preview {
-    MediaListView(viewModel: ImageListViewModel(networkService: NetworkService()))
-}
-
 struct MediaRowView: View {
     
     let media: Media
-    @ObservedObject var viewModel: ImageListViewModel
+    @ObservedObject var viewModel: MediaListViewModel
     
     var body: some View {
         VStack(alignment: .center) {
@@ -60,6 +30,7 @@ struct MediaRowView: View {
         .frame(width: UIScreen.main.bounds.width - 40, alignment: .center)
     }
 }
+
 
 struct MediaView: View {
     

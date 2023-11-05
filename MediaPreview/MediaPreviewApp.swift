@@ -11,7 +11,7 @@ import SwiftUI
 struct MediaPreviewApp: App {
     var body: some Scene {
         WindowGroup {
-            MediaListView(viewModel: ImageListViewModel(networkService: NetworkService()))
+            MediaListView(viewModel: MediaListViewModel(networkService: NetworkService()))
         }
     }
 }

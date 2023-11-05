@@ -13,8 +13,10 @@
 		3041553F2AF5DF13003646A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3041553E2AF5DF13003646A2 /* Preview Assets.xcassets */; };
 		304155462AF5E1E1003646A2 /* MediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304155452AF5E1E1003646A2 /* MediaModel.swift */; };
 		304155482AF5E405003646A2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304155472AF5E405003646A2 /* NetworkService.swift */; };
-		3041554A2AF5E90A003646A2 /* ImageListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304155492AF5E90A003646A2 /* ImageListVM.swift */; };
+		3041554A2AF5E90A003646A2 /* MediaListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304155492AF5E90A003646A2 /* MediaListViewModel.swift */; };
 		3041554C2AF77462003646A2 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3041554B2AF77462003646A2 /* DetailView.swift */; };
+		3041554E2AF7754E003646A2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3041554D2AF7754E003646A2 /* Constants.swift */; };
+		304155502AF77632003646A2 /* MediaRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3041554F2AF77632003646A2 /* MediaRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +27,10 @@
 		3041553E2AF5DF13003646A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		304155452AF5E1E1003646A2 /* MediaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaModel.swift; sourceTree = "<group>"; };
 		304155472AF5E405003646A2 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		304155492AF5E90A003646A2 /* ImageListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListVM.swift; sourceTree = "<group>"; };
+		304155492AF5E90A003646A2 /* MediaListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaListViewModel.swift; sourceTree = "<group>"; };
 		3041554B2AF77462003646A2 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		3041554D2AF7754E003646A2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3041554F2AF77632003646A2 /* MediaRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				304155372AF5DF11003646A2 /* MediaPreviewApp.swift */,
-				304155392AF5DF11003646A2 /* MediaListView.swift */,
-				3041554B2AF77462003646A2 /* DetailView.swift */,
-				304155452AF5E1E1003646A2 /* MediaModel.swift */,
-				304155472AF5E405003646A2 /* NetworkService.swift */,
-				304155492AF5E90A003646A2 /* ImageListVM.swift */,
+				304155542AF77792003646A2 /* Helpers */,
+				304155532AF7776A003646A2 /* Network */,
+				304155512AF776A9003646A2 /* MediaList */,
 				3041553B2AF5DF13003646A2 /* Assets.xcassets */,
 				3041553D2AF5DF13003646A2 /* Preview Content */,
 			);
@@ -77,6 +79,42 @@
 				3041553E2AF5DF13003646A2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		304155512AF776A9003646A2 /* MediaList */ = {
+			isa = PBXGroup;
+			children = (
+				304155452AF5E1E1003646A2 /* MediaModel.swift */,
+				304155392AF5DF11003646A2 /* MediaListView.swift */,
+				304155492AF5E90A003646A2 /* MediaListViewModel.swift */,
+				304155522AF776DA003646A2 /* SubViews */,
+			);
+			path = MediaList;
+			sourceTree = "<group>";
+		};
+		304155522AF776DA003646A2 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				3041554B2AF77462003646A2 /* DetailView.swift */,
+				3041554F2AF77632003646A2 /* MediaRowView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		304155532AF7776A003646A2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				304155472AF5E405003646A2 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		304155542AF77792003646A2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3041554D2AF7754E003646A2 /* Constants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,10 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3041554A2AF5E90A003646A2 /* ImageListVM.swift in Sources */,
+				304155502AF77632003646A2 /* MediaRowView.swift in Sources */,
+				3041554A2AF5E90A003646A2 /* MediaListViewModel.swift in Sources */,
 				3041554C2AF77462003646A2 /* DetailView.swift in Sources */,
 				3041553A2AF5DF11003646A2 /* MediaListView.swift in Sources */,
 				304155382AF5DF11003646A2 /* MediaPreviewApp.swift in Sources */,
+				3041554E2AF7754E003646A2 /* Constants.swift in Sources */,
 				304155482AF5E405003646A2 /* NetworkService.swift in Sources */,
 				304155462AF5E1E1003646A2 /* MediaModel.swift in Sources */,
 			);
