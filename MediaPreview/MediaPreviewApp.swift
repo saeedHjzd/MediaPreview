@@ -2,7 +2,7 @@
 //  MediaPreviewApp.swift
 //  MediaPreview
 //
-//  Created by Saeed on 8/13/1402 AP.
+//  Created by Saeed on 8/13/1402 AP
 //
 
 import SwiftUI
